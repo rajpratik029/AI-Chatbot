@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot.ai</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1>ChatBot.ai</h1>
+            <p>Powered by Flask</p>   
+        </header>
+
+        <main class="chat-window" id="chat">
+            <div class="message bot">
+                Hello! I'm your next-gen chat assistant.
+            </div>
+        </main>
+        <footer class="chat-input">
+            <input type="text" placeholder="Type your message.." id="message">
+            <button id="send-btn">send</button>
+        </footer>
+    
+    </div>    
+    
+    <script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+</body>
+</html>
